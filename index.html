@@ -6,15 +6,25 @@
 	</head>
 	<body>
 	
-	<table id="demo">
+	<table id="demo" border="">
 		 
+	 
 	</table>
+	
+	<!--<table border="" cellspacing="" cellpadding="">
+		<tr><th>Header</th></tr>
+		<tr><td>Data</td></tr>
+	</table>-->
 	
 	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 	<script src="js/cuteTable.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		$(function(){
-			$("#demo").cuteTable({});
+			$("#demo").cuteTable({
+				isShowRowNum:true,
+				columns:[{field:'测试',name:'demo'}],
+				data:[{demo:"test"}]
+			});
 		});
 	</script>
 	</body>
